@@ -1,0 +1,8 @@
+[Unit]
+Description=multi-level-test-a service
+PartOf=multi-level-test.target
+Wants=multi-level-test-a@1.service
+Wants=multi-level-test-a@2.service
+
+[Install]
+WantedBy=multi-user.target

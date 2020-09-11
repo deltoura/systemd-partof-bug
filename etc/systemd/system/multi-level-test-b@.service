@@ -1,0 +1,8 @@
+[Unit]
+Description="multi-level-test service: %j instance #%i"
+PartOf=multi-level-test-b.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/test.sh %j %i
+
